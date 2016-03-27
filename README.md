@@ -6,8 +6,8 @@ ProtoDef specification : describe your protocol, and read it with ease.
 
 | Implementation | Language | Method |
 | --- | --- | --- |
-| [node-protodef](https://github.com/roblabla/ProtoDef) | Node.js | interpretation |
-| [McEx/ProtoDef](https://github.com/McEx/ProtoDef) | Elixir | compilation |
+| [node-protodef](https://github.com/ProtoDef-io/node-protodef) | Node.js | interpretation |
+| [elixir-protodef](https://github.com/ProtoDef-io/elixir-protodef) | Elixir | compilation |
 
 ## Documentation
 

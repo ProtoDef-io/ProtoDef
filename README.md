@@ -11,7 +11,7 @@ ProtoDef specification : describe your protocol, and read it with ease.
 
 ## Documentation
 
-Read the [datatypes](datatypes.md) documentation.
+Read the [datatypes](doc/datatypes.md) documentation.
 
 ## Projects Using ProtoDef
 

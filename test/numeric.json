@@ -227,6 +227,83 @@
     ]
   },
   {
+    "type": "u64",
+    "values": [
+      {
+        "description": "small",
+        "buffer": [
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0xff"
+        ],
+        "value": [
+          0,
+          255
+        ]
+      },
+      {
+        "description": "big",
+        "buffer": [
+          "0x7f",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00"
+        ],
+        "value": [
+          2130706432,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "type": "li8",
+    "values": [
+      {
+        "description": "positive",
+        "buffer": [
+          "0x3d"
+        ],
+        "value": 61
+      },
+      {
+        "description": "negative",
+        "buffer": [
+          "0x86"
+        ],
+        "value": -122
+      }
+    ]
+  },
+  {
+    "type": "lu8",
+    "values": [
+      {
+        "description": "positive",
+        "buffer": [
+          "0x3d"
+        ],
+        "value": 61
+      },
+      {
+        "description": "negative",
+        "buffer": [
+          "0x86"
+        ],
+        "value": 134
+      }
+    ]
+  },
+  {
     "type": "li16",
     "values": [
       {
@@ -410,6 +487,45 @@
         ],
         "value": [
           -2130706432,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "type": "lu64",
+    "values": [
+      {
+        "description": "small",
+        "buffer": [
+          "0xff",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00"
+        ],
+        "value": [
+          0,
+          255
+        ]
+      },
+      {
+        "description": "big",
+        "buffer": [
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x00",
+          "0x7f"
+        ],
+        "value": [
+          2130706432,
           0
         ]
       }

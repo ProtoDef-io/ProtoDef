@@ -72,6 +72,9 @@ These datatypes don't take any arguments. They represent numbers.
 | f32     | 4             | 4.5                 | float                        |
 | f64     | 8             | 4.5                 | double                       |
 | i64     | 8             | [0,1]               | long                         |
+| u64     | 8             | [0,1]               | unsigned long                |
+| li8     | 1             | -125                | little endian byte           |
+| lu8     | 1             | 255                 | little endian unsigned byte  |
 | li16    | 2             | -32000              | little endian short          | 
 | lu16    | 2             | 60000               | little endian unsigned short |
 | li32    | 4             | -2000000000         | little endian int            |
@@ -79,6 +82,7 @@ These datatypes don't take any arguments. They represent numbers.
 | lf32    | 4             | 4.5                 | little endian float          |
 | lf64    | 8             | 4.5                 | little endian double         |
 | li64    | 8             | [0,1]               | little endian long           |
+| lu64    | 8             | [0,1]               | little endian unsigned long  |
 
 ## Structures
 

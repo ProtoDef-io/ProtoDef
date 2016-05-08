@@ -67,6 +67,20 @@
     "type":"buffer",
     "subtypes":[
       {
+        "description":"a fixed size buffer",
+        "type":["buffer",
+          {
+            "count":3
+          }
+        ],
+        "values":[
+          {
+            "value":["0x05","0x10","0xAE"],
+            "buffer":["0x05","0x10","0xAE"]
+          }
+        ]
+      },
+      {
         "description":"an u8 prefixed buffer",
         "type":["buffer",
           {
@@ -85,6 +99,22 @@
   {
     "type":"pstring",
     "subtypes":[
+      {
+
+        "description":"fixed size string",
+        "type":[
+          "pstring",{
+            "count":6
+          }
+        ],
+        "values":[
+          {
+            "description":"simple hello",
+            "buffer":[ "0x48", "0x65", "0x6C", "0x6C", "0x6F", "0x21"],
+            "value":"Hello!"
+          }
+        ]
+      },
       {
         "description":"i16 prefixed string",
         "type":[

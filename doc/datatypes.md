@@ -96,7 +96,7 @@ It takes for arguments:
 * countType : the type of the length prefix
 * count : optional (either count or countType), a reference to the field counting the elements, or a fixed size (an integer)
 
-See [Counting](#Counting)
+See [Counting](#counting)
 
 Example:
 
@@ -186,7 +186,7 @@ Example of value : `true`
 A length prefixed string. It takes one argument : the type of the length prefix. 
 It is usually used to define a "string" type that can be used without argument.
 
-The count can also be defined in different ways, see [Counting](#Counting).
+The count can also be defined in different ways, see [Counting](#counting).
 
 Example:
 
@@ -210,7 +210,7 @@ It takes for arguments:
 * countType : the type of the length prefix
 * count : optional (either count or countType), a reference to the field counting the elements, or a fixed size (an integer)
 
-See [Counting](#Counting)
+See [Counting](#counting)
 
 Example:
 

@@ -31,6 +31,43 @@
             "buffer":["0x38","0x19","0x05"]
           }
         ]
+      },
+      {
+        "description":"set_protocol",
+        "type":[
+          "container",
+          [
+            {
+              "name": "protocolVersion",
+              "type": "varint"
+            },
+            {
+              "name": "serverHost",
+              "type": ["pstring",{
+                "countType":"varint"
+              }]
+            },
+            {
+              "name": "serverPort",
+              "type": "u16"
+            },
+            {
+              "name": "nextState",
+              "type": "varint"
+            }
+          ]
+        ],
+        "values":[
+          {
+            "value":{
+              "protocolVersion":47,
+              "serverHost":"127.0.0.1",
+              "serverPort":25565,
+              "nextState":1
+            },
+            "buffer":["0x2f","0x09","0x31","0x32","0x37","0x2e","0x30","0x2e","0x30","0x2e","0x31","0x63","0xdd","0x01"]
+          }
+        ]
       }
     ]
   },

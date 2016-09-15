@@ -13,6 +13,8 @@ ProtoDef specification : describe your protocol, and read it with ease.
 
 Read the [datatypes](doc/datatypes.md) documentation.
 
+The [schemas](schemas) directory contain json schema of the json representation of a datatype definition.
+
 ## Projects Using ProtoDef
 
 * [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) defines a protocol.json by minecraft version and use ProtoDef to serialize and parse packets

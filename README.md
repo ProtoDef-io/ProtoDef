@@ -1,6 +1,6 @@
 # ProtoDef
 
-ProtoDef specification : describe your protocol, and read it with ease.
+ProtoDef specification: describe your protocol, and read it with ease.
 
 ## Implementations
 

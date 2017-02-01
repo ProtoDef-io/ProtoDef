@@ -11,7 +11,7 @@ ProtoDef specification : describe your protocol, and read it with ease.
 
 ## Documentation
 
-Read the [datatypes](doc/datatypes.md) documentation.
+Read the [datatypes](doc/datatypes.md) and [protocol](doc/protocol.md) documentation.
 
 The [schemas](schemas) directory contain json schema of the json representation of a datatype definition.
 

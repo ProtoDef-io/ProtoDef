@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "pstring",
+  "type": "array",
+  "items":[
+    {"enum":["pstring"]},
+    {
+      "oneOf":[
+        {
+          "type":"object",
+          "properties":{
+            "countType": {"$ref": "dataType"}
+          },
+          "additionalProperties": false,
+          "required":["countType"]
+        },
+        {
+          "type":"object",
+          "properties":{
+            "count": {"$ref": "definitions#/definitions/dataTypeArgsCount"}
+          },
+          "additionalProperties": false,
+          "required":["count"]
+        }
+      ]
+    }
+  ],
+  "additionalItems": false
+}

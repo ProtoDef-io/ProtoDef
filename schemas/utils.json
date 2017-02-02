@@ -1,6 +1,6 @@
 {
-  "varint":{"type":{"enum":["varint"]}},
-  "bool":{"type":{"enum":["bool"]}},
+  "varint":{"enum":["varint"]},
+  "bool":{"enum":["bool"]},
   "pstring":{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pstring",
@@ -62,7 +62,7 @@
       }
     ]
   },
-  "void":{"type":{"enum":["void"]}},
+  "void":{"enum":["void"]},
   "bitfield":{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "bitfield",
@@ -90,7 +90,7 @@
     ],
     "additionalItems": false
   },
-  "cstring":{"type":{"enum":["cstring"]}},
+  "cstring":{"enum":["cstring"]},
   "mapper":{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "mapper",

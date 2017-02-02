@@ -2,10 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "definitions",
   "definitions": {
-    "simpleFieldType": {
-      "type": "string",
-      "pattern": "^[0-9a-zA-Z_]+$"
-    },
     "contextualizedFieldName": {
       "type": "string",
       "pattern": "^(this\\.)?.+$"

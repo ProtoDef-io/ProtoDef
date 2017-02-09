@@ -6,7 +6,17 @@
     "types":{
       "type": "object",
       "patternProperties": {
-        "^[0-9a-zA-Z_]+$": {"$ref": "dataType"}
+        "^[0-9a-zA-Z_]+$": {
+          "oneOf":[
+            {"type":"string"},
+            {
+              "type": "array",
+              "items": [
+                {"type":"string"},
+                {"oneOf":[{"type": "object"},{"type": "array"}]}
+              ]
+            }
+          ]}
       },
       "additionalProperties": false
     }

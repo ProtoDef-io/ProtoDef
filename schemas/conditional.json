@@ -9,6 +9,7 @@
         "type":"object",
         "properties": {
           "compareTo":{"$ref": "definitions#/definitions/contextualizedFieldName"},
+          "compareToValue":{"type":"string"},
           "fields":{
             "type":"object",
             "patternProperties" : {

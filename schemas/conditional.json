@@ -19,7 +19,14 @@
           },
           "default":{"$ref": "dataType"}
         },
-        "required":["compareTo","fields"],
+        "oneOf":[
+          {
+            "required":["compareTo","fields"]
+          },
+          {
+            "required":["compareToValue","fields"]
+          }
+        ],
         "additionalProperties": false
       }
     ],

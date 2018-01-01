@@ -13,7 +13,7 @@
           "fields":{
             "type":"object",
             "patternProperties" : {
-              "^[-a-zA-Z0-9 _]+$":{"$ref": "dataType"}
+              "^[-a-zA-Z0-9 _:]+$":{"$ref": "dataType"}
             },
             "additionalProperties": false
           },

@@ -1,6 +1,4 @@
-
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "datatype tests",
   "type": "array",
   "uniqueItems": true,

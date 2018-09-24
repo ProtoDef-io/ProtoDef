@@ -1,6 +1,5 @@
 {
   "switch":{
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "switch",
     "type": "array",
     "items":[
@@ -33,7 +32,6 @@
     "additionalItems": false
   },
   "option":{
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "option",
     "type": "array",
     "items":[

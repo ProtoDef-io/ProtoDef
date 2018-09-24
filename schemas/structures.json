@@ -1,6 +1,5 @@
 {
   "array":{
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "array",
     "type":"array",
     "items":[
@@ -31,7 +30,6 @@
     "additionalItems": false
   },
   "count":{
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "count",
     "type": "array",
     "items":[
@@ -49,7 +47,6 @@
     "additionalItems": false
   },
   "container":{
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "container",
     "type": "array",
     "items": [

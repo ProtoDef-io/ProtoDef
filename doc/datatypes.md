@@ -51,7 +51,7 @@ An option of value string
 ```json
 [
   "option",
-  "string"
+  "cstring"
 ]
 ```
 

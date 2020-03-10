@@ -1,29 +1,39 @@
 {
-  "switch":{
+  "switch": {
     "title": "switch",
     "type": "array",
-    "items":[
-      {"enum":["switch"]},
+    "items": [
       {
-        "type":"object",
+        "enum": ["switch"]
+      },
+      {
+        "type": "object",
         "properties": {
-          "compareTo":{"$ref": "definitions#/definitions/contextualizedFieldName"},
-          "compareToValue":{"type":"string"},
-          "fields":{
-            "type":"object",
-            "patternProperties" : {
-              "^[-a-zA-Z0-9 _:]+$":{"$ref": "dataType"}
+          "compareTo": {
+            "$ref": "definitions#/definitions/contextualizedFieldName"
+          },
+          "compareToValue": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "object",
+            "patternProperties": {
+              "^[-a-zA-Z0-9 _:]+$": {
+                "$ref": "dataType"
+              }
             },
             "additionalProperties": false
           },
-          "default":{"$ref": "dataType"}
+          "default": {
+            "$ref": "dataType"
+          }
         },
-        "oneOf":[
+        "oneOf": [
           {
-            "required":["compareTo","fields"]
+            "required": ["compareTo", "fields"]
           },
           {
-            "required":["compareToValue","fields"]
+            "required": ["compareToValue", "fields"]
           }
         ],
         "additionalProperties": false
@@ -31,12 +41,16 @@
     ],
     "additionalItems": false
   },
-  "option":{
+  "option": {
     "title": "option",
     "type": "array",
-    "items":[
-      {"enum":["option"]},
-      {"$ref": "dataType"}
+    "items": [
+      {
+        "enum": ["option"]
+      },
+      {
+        "$ref": "dataType"
+      }
     ],
     "additionalItems": false
   }

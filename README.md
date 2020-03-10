@@ -8,6 +8,9 @@ ProtoDef specification: describe your protocol, and read it with ease.
 | --- | --- | --- |
 | [node-protodef](https://github.com/ProtoDef-io/node-protodef) | Node.js | interpretation |
 | [elixir-protodef](https://github.com/ProtoDef-io/elixir-protodef) | Elixir | compilation |
+| [protodefc](https://github.com/ProtoDef-io/protodefc) | Rust | compilation |
+
+<!--| [node-protodef-neo](https://github.com/Saiv46/node-protodef-neo) | Node.js | mixed | -->
 
 ## Documentation
 

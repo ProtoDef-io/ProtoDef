@@ -1,44 +1,60 @@
 {
-  "array":{
+  "array": {
     "title": "array",
-    "type":"array",
-    "items":[
-      {"enum":["array"]},
+    "type": "array",
+    "items": [
       {
-        "oneOf":[
+        "enum": ["array"]
+      },
+      {
+        "oneOf": [
           {
-            "type":"object",
-            "properties":{
-              "type": {"$ref": "dataType"},
-              "countType": {"$ref": "dataType"}
+            "type": "object",
+            "properties": {
+              "type": {
+                "$ref": "dataType"
+              },
+              "countType": {
+                "$ref": "dataType"
+              }
             },
             "additionalProperties": false,
-            "required":["type","countType"]
+            "required": ["type", "countType"]
           },
           {
-            "type":"object",
-            "properties":{
-              "type": {"$ref": "dataType"},
-              "count": {"$ref": "definitions#/definitions/dataTypeArgsCount"}
+            "type": "object",
+            "properties": {
+              "type": {
+                "$ref": "dataType"
+              },
+              "count": {
+                "$ref": "definitions#/definitions/dataTypeArgsCount"
+              }
             },
             "additionalProperties": false,
-            "required":["type","count"]
+            "required": ["type", "count"]
           }
         ]
       }
     ],
     "additionalItems": false
   },
-  "count":{
+  "count": {
     "title": "count",
     "type": "array",
-    "items":[
-      {"enum":["count"]},
+    "items": [
+      {
+        "enum": ["count"]
+      },
       {
         "type": "object",
         "properties": {
-          "countFor": {"$ref":"definitions#/definitions/contextualizedFieldName"},
-          "type": {"$ref": "dataType"}
+          "countFor": {
+            "$ref": "definitions#/definitions/contextualizedFieldName"
+          },
+          "type": {
+            "$ref": "dataType"
+          }
         },
         "required": ["countFor", "type"],
         "additionalProperties": false
@@ -46,14 +62,12 @@
     ],
     "additionalItems": false
   },
-  "container":{
+  "container": {
     "title": "container",
     "type": "array",
     "items": [
       {
-        "enum": [
-          "container"
-        ]
+        "enum": ["container"]
       },
       {
         "type": "array",
@@ -72,19 +86,13 @@
           },
           "oneOf": [
             {
-              "required": [
-                "anon"
-              ]
+              "required": ["anon"]
             },
             {
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           ],
-          "required": [
-            "type"
-          ],
+          "required": ["type"],
           "additionalProperties": false
         },
         "additionalItems": false

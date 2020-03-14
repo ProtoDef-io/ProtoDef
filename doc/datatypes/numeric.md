@@ -1,7 +1,7 @@
 ## Numeric
 
 These datatypes represent numbers. Most of them don't take any arguments.
-To use little-endian, prefix its name with "l".
+They default to big-endian encoding. To use little-endian, prefix its name with "l".
 
 | Name    | Size in bytes | Example of value    | Also called                  |
 | ---     | ---           | ---                 | ---                          |

@@ -56,6 +56,10 @@
           {
             "value":61303,
             "buffer":["0x01", "0xef","0x77"]
+          },
+          {
+            "value": null,
+            "buffer":["0x00"]
           }
         ]
       }

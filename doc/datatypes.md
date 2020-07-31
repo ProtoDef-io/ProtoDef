@@ -165,6 +165,8 @@ A container with fields of type int, int, ushort and ushort.
 
 Example of value: `{"x":10,"z":10,"bitMap":10,"addBitMap":10}`
 
+Fields take an optional key `anon:true` which will flatten the child container. It will take all the child keys and put them in the parent container.
+
 ## Utils
 
 ### varint

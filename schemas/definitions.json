@@ -20,5 +20,5 @@
       "pattern": "^[a-zA-Z0-9_]+$"
     }
   },
-  "type":"object"
+  "type": "object"
 }

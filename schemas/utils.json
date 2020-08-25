@@ -1,85 +1,94 @@
 {
-  "varint":{"enum":["varint"]},
-  "bool":{"enum":["bool"]},
-  "pstring":{
+  "pstring": {
     "title": "pstring",
     "type": "array",
-    "items":[
-      {"enum":["pstring"]},
+    "items": [
       {
-        "oneOf":[
+        "enum": ["pstring"]
+      },
+      {
+        "oneOf": [
           {
-            "type":"object",
-            "properties":{
-              "countType": {"$ref": "dataType"}
+            "type": "object",
+            "properties": {
+              "countType": {
+                "$ref": "dataType"
+              }
             },
             "additionalProperties": false,
-            "required":["countType"]
+            "required": ["countType"]
           },
           {
-            "type":"object",
-            "properties":{
-              "count": {"$ref": "definitions#/definitions/dataTypeArgsCount"}
+            "type": "object",
+            "properties": {
+              "count": {
+                "$ref": "definitions#/definitions/dataTypeArgsCount"
+              }
             },
             "additionalProperties": false,
-            "required":["count"]
+            "required": ["count"]
           }
         ]
       }
     ],
     "additionalItems": false
   },
-  "buffer":{
+  "buffer": {
     "title": "buffer",
-    "type":"array",
-    "items":[
-      {"enum":["buffer"]},
+    "type": "array",
+    "items": [
       {
-        "oneOf":[
+        "enum": ["buffer"]
+      },
+      {
+        "oneOf": [
           {
             "type": "object",
             "properties": {
-              "countType": {"$ref": "dataType"}
+              "countType": {
+                "$ref": "dataType"
+              }
             },
             "additionalProperties": false,
-            "required": [
-              "countType"
-            ]
+            "required": ["countType"]
           },
           {
             "type": "object",
             "properties": {
-              "count": {"$ref": "definitions#/definitions/dataTypeArgsCount"}
+              "count": {
+                "$ref": "definitions#/definitions/dataTypeArgsCount"
+              }
             },
             "additionalProperties": false,
-            "required": [
-              "count"
-            ]
+            "required": ["count"]
           }
         ]
       }
     ]
   },
-  "void":{"enum":["void"]},
-  "bitfield":{
+  "bitfield": {
     "title": "bitfield",
     "type": "array",
     "items": [
-      { "enum": ["bitfield"] },
+      {
+        "enum": ["bitfield"]
+      },
       {
         "type": "array",
         "items": {
           "type": "object",
           "properties": {
-            "name": {"$ref": "definitions#/definitions/fieldName"},
-            "size": {"type": "number"},
-            "signed": {"type": "boolean"}
+            "name": {
+              "$ref": "definitions#/definitions/fieldName"
+            },
+            "size": {
+              "type": "number"
+            },
+            "signed": {
+              "type": "boolean"
+            }
           },
-          "required": [
-            "name",
-            "size",
-            "signed"
-          ],
+          "required": ["name", "size", "signed"],
           "additionalProperties": false
         },
         "additionalItems": false
@@ -87,25 +96,30 @@
     ],
     "additionalItems": false
   },
-  "cstring":{"enum":["cstring"]},
-  "mapper":{
+  "mapper": {
     "title": "mapper",
     "type": "array",
-    "items":[
-      {"enum":["mapper"]},
+    "items": [
       {
-        "type":"object",
+        "enum": ["mapper"]
+      },
+      {
+        "type": "object",
         "properties": {
-          "type":{"$ref": "dataType"},
-          "mappings":{
-            "type":"object",
-            "patternProperties" : {
-              "^[-a-zA-Z0-9 _]+$":{"type":"string"}
+          "type": {
+            "$ref": "dataType"
+          },
+          "mappings": {
+            "type": "object",
+            "patternProperties": {
+              "^[-a-zA-Z0-9 _]+$": {
+                "type": "string"
+              }
             },
             "additionalProperties": false
           }
         },
-        "required":["type","mappings"],
+        "required": ["type", "mappings"],
         "additionalProperties": false
       }
     ],

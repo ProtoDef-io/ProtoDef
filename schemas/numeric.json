@@ -62,9 +62,6 @@
   "varint": {
     "enum": ["varint"]
   },
-  "lvarint": {
-    "enum": ["lvarint"]
-  },
   "int": {
     "title": "int",
     "type": "array",

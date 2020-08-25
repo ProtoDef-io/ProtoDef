@@ -28,7 +28,6 @@
     { "$ref": "int" },
     { "$ref": "varint" },
     { "$ref": "lint" },
-    { "$ref": "lvarint" },
 
     { "$ref": "array" },
     { "$ref": "container" },

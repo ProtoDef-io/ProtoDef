@@ -11,6 +11,7 @@ ProtoDef specification: describe your protocol, and read it with ease.
 | [protodefc](https://github.com/ProtoDef-io/protodefc) | Rust | compilation |
 | [node-protodef-neo](https://github.com/Saiv46/node-protodef-neo) | Node.js | mixed |
 | [mcd2c](https://github.com/SpockBotMC/mcd2c) | C | compilation |
+| [mcd2cpp](https://github.com/SpockBotMC/RikerBot/blob/master/mcd2cpp/__init__.py#L495) | C++ | compilation |
 
 ## Documentation
 

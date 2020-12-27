@@ -4,7 +4,6 @@
 * * [option](./datatypes/conditional.md#)
 * [Numeric](./datatypes/numeric.md)
 * * [i8 / u8 / i16 / u16 / i32 / u32 / i64 / u64 / f32 / f64](./datatypes/numeric.md)
-* * [int](./datatypes/numeric.md)
 * * [varint](./datatypes/numeric.md)
 * [Structures](./datatypes/structures.md)
 * * [array](./datatypes/structures.md)

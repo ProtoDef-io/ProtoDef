@@ -15,7 +15,6 @@ They default to big-endian encoding. To use little-endian, prefix its name with 
 | f64     | 8             | 4.5                 | double                       |
 | i64     | 8             | 1                   | long                         |
 | u64     | 8             | 1                   | unsigned long                |
-| int     | (varies)      | 16777000            | unsigned var                 |
 | varint  | (varies)      | 300                 | int var                      |
 
 ### **int** ({ size: Integer })

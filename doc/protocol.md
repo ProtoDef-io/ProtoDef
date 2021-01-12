@@ -10,12 +10,16 @@ Example:
     "varint": "native"
   },
   "namespace1": {
-    "mytype": [
-      "pstring",
-      "varint"
-    ],
+    "types": {
+      "mytype": [
+        "pstring",
+        "varint"
+      ],
+    },
     "namespace2": {
-      "packet": "mytype"
+      "types": {
+        "packet": "varint"
+      }
     }
   }
 }

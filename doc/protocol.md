@@ -10,10 +10,12 @@ Example:
     "varint": "native"
   },
   "namespace1": {
-    "mytype": [
-      "pstring",
-      "varint"
-    ],
+    "types": {
+      "mytype": [
+        "pstring",
+        "varint"
+      ]
+    },
     "namespace2": {
       "packet": "mytype"
     }
@@ -29,7 +31,7 @@ Arguments:
 * * * 0 : name of used type
 * * * 1 : options of used type
 
-## **[String]** : { [String]: Type | [namespace], ... }
+## **[String]** : { [namespace], ... }
 Arguments:
 * [object] : A namespace object
 * * [key] : type name

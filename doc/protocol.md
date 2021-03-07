@@ -23,6 +23,9 @@ Example:
 }
 ```
 
+> Don't define types with same name (or override types in child namespaces) because this will lead to implementation-defined behavior.
+> Same with override of built-in types such as `u8`.
+
 ## **types** : { [String]: Type | "native", ... }
 Arguments:
 * [object] : a type definition

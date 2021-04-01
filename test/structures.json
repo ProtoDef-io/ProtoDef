@@ -122,6 +122,117 @@
             "buffer":["0xe3","0x26","0x04","0x61"]
           }
         ]
+      },
+      {
+        "description":"container with 2 bitfields in an array in a container",
+        "type":[
+          "container",
+          [
+            {
+              "name": "chunkX",
+              "type": "i32"
+            },
+            {
+              "name": "chunkZ",
+              "type": "i32"
+            },
+            {
+              "name": "recordCount",
+              "type": [
+                "count",
+                {
+                  "type": "i16",
+                  "countFor": "records"
+                }
+              ]
+            },
+            {
+              "name": "dataLength",
+              "type": "i32"
+            },
+            {
+              "name": "records",
+              "type": [
+                "array",
+                {
+                  "count": "recordCount",
+                  "type": [
+                    "container",
+                    [
+                      {
+                        "anon": true,
+                        "type": [
+                          "bitfield",
+                          [
+                            {
+                              "name": "metadata",
+                              "size": 4,
+                              "signed": false
+                            },
+                            {
+                              "name": "blockId",
+                              "size": 12,
+                              "signed": false
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "name": "y",
+                        "type": "u8"
+                      },
+                      {
+                        "anon": true,
+                        "type": [
+                          "bitfield",
+                          [
+                            {
+                              "name": "z",
+                              "size": 4,
+                              "signed": false
+                            },
+                            {
+                              "name": "x",
+                              "size": 4,
+                              "signed": false
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        ],
+        "values":[
+          {
+            "value":{
+                "chunkX": 25,
+                "chunkZ": 66,
+                "recordCount": 2,
+                "dataLength": 8,
+                "records": [
+                    {
+                    "metadata": 14,
+                    "blockId": 806,
+                    "y": 4,
+                    "z": 6,
+                    "x": 1
+                    },
+                    {
+                    "metadata": 13,
+                    "blockId": 806,
+                    "y": 4,
+                    "z": 0,
+                    "x": 6
+                    }
+                ]
+            },
+            "buffer":["0x00","0x00","0x00","0x19","0x00","0x00","0x00","0x42","0x00","0x02","0x00","0x00","0x00","0x08","0xe3","0x26","0x04","0x61","0xd3","0x26","0x04","0x06"]
+          }
+        ]
       }
     ]
   },

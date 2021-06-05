@@ -10,6 +10,10 @@ Arguments:
 switch make it possible to choose a datatype depending on the value of an other field. 
 It is similar to the switch/case syntax.
 
+For `compareTo` variables, to go up one level when referencing a field, use "../".
+
+Switch statement field names starting with "/" will reference a root variable. Root variables are primitives that can be used for comparisons and changed dynamically.
+
 Example:
 
 A switch which can encode a byte, a varint, a float or a string depending on "someField". 

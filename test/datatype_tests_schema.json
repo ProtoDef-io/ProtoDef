@@ -16,7 +16,8 @@
         "type": {
           "type": "string"
         },
-        "values": {"$ref" : "#/definitions/test_values"}
+        "values": {"$ref" : "#/definitions/test_values"},
+        "vars": { "type": ["array"] }
       },
       "required": [
         "type",

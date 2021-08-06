@@ -74,13 +74,14 @@ Example of value: `"int"`
 Arguments:
 * countType : the type of the length prefix
 * count : optional (either count or countType), a reference to the field counting the elements, or a fixed size (an integer)
+* encoding: the encoding of the string, UTF-8 by default
 
 Represents a string.
 
 Example: A string length prefixed by a varint.
 ```json
 [
-  "pstring", { "countType": "varint" }
+  "pstring", { "countType": "varint", "encoding": "utf-8" }
 ]
 ```
 Example of value: `"my string"`

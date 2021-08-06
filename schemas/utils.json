@@ -13,6 +13,9 @@
             "properties": {
               "countType": {
                 "$ref": "dataType"
+              },
+              "encoding": {
+                "type": "string"
               }
             },
             "additionalProperties": false,
@@ -23,6 +26,9 @@
             "properties": {
               "count": {
                 "$ref": "definitions#/definitions/dataTypeArgsCount"
+              },
+              "encoding": {
+                "type": "string"
               }
             },
             "additionalProperties": false,

@@ -2,7 +2,7 @@
 
 Collection of ProtoDef extension specifications
 
-Please note that specifications in this repository are non-standard and support quality varies.
+Please note that specifications here are non-standard and support quality varies.
 
 ## Extensions
 
@@ -16,4 +16,4 @@ Feel free to add your extension here, see [example.md](example.md) for extension
 
 ## Projects using extensions
 
-* [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) uses [pbvarint](pbvarint.md)
+* [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) uses [pbvarint](pbvarint.md) and [uuid](uuid.md)

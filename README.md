@@ -6,12 +6,10 @@ ProtoDef specification: describe your protocol, and read it with ease.
 
 | Implementation | Language | Method |
 | --- | --- | --- |
-| [node-protodef](https://github.com/ProtoDef-io/node-protodef) | Node.js | interpretation and compilation |
-| [elixir-protodef](https://github.com/ProtoDef-io/elixir-protodef) | Elixir | compilation |
+| [node-protodef](https://github.com/ProtoDef-io/node-protodef) | Node.js | interpretation & compilation |
 | [protodefc](https://github.com/ProtoDef-io/protodefc) | Rust | compilation |
-| [node-protodef-neo](https://github.com/Saiv46/node-protodef-neo) | Node.js | mixed |
 | [mcd2c](https://github.com/SpockBotMC/mcd2c) | C | compilation |
-| [mcd2cpp](https://github.com/SpockBotMC/RikerBot/blob/master/mcd2cpp/__init__.py#L495) | C++ | compilation |
+| [mcd2cpp](https://github.com/SpockBotMC/RikerBot/tree/master/mcd2cpp) | C++ | compilation |
 
 ## Documentation
 

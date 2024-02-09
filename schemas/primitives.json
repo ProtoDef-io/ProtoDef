@@ -3,6 +3,8 @@
     "enum": ["bool"]
   },
   "cstring": {
+    "title": "cstring",
+    "type": "array",
     "items": [
       {
         "enum": ["cstring"]

@@ -20,11 +20,12 @@ Example: An array of int prefixed by a short length.
 ```
 Example of value: `[1, 2, 3, 4]` (type = [i8](./numeric.md)) / `["ac", "dc"]` (type = [cstring](./utils.md))
 
-### **container** ([ { name: String, type: Type }, ... ])
+### **container** ([ { name: String, type: Type, ?anon: Bool }, ... ])
 Arguments: 
 * [array] : a field
 * * name : the name of field
 * * type : the type of field
+* * anon : optional (either anon or name), a boolean to make field anonymous (also known as [unnamed field](https://gcc.gnu.org/onlinedocs/gcc/Unnamed-Fields.html))
 
 Represents a list of named values.
 
@@ -35,12 +36,19 @@ Example: A container with fields of type int, int, ushort and ushort.
   [
     { "name": "x", "type": "i32" },
     { "name": "z", "type": "i32" },
-    { "name": "bitMap", "type": "u16" },
-    { "name": "addBitMap", "type": "u16" }
+    { "anon": true, "type": [
+      "container",
+      [
+        { "name": "bitMap", "type": "u16" },
+        { "name": "addBitMap", "type": "u16" }
+      ]
+    ] }
   ]
 ]
 ```
 Example of value: `{"x": 10, "z": 10, "bitMap": 10, "addBitMap": 10}`
+
+**Note**: At the time of writing, implementations have limited support of `anon`.
 
 ### **count** ({ type: Type, countFor: Field })
 Arguments:

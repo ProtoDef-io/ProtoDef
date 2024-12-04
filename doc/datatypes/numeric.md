@@ -17,6 +17,7 @@ They default to big-endian encoding. To use little-endian, prefix its name with 
 | u64     | 8             | 1                   | unsigned long                |
 | varint  | 1-4           | 300                 | int var                      |
 | varint64 | 1-8           | 300n                | unsigned long                |
+| varint128 | 1-16         | 2 ^ 68              | unsigned __int128            |
 | zigzag32 | 1-4           | -100                | signed int var               |
 | zigzag64 | 1-8           | -680n               | signed long                  |
 
@@ -46,6 +47,11 @@ Example of value: `300` (size is 2 bytes)
 Arguments: None
 
 Same as **varint**, but for 64-bit unsigned integers, or signed 64-bit integers that have been directly cast to an integer (where the MSB is the sign bit) before encoding.
+
+### **varint128** ()
+Arguments: None
+
+Same as **varint**, but for 128-bit unsigned integers, or signed 128-bit integers that have been directly cast to an integer (where the MSB is the sign bit) before encoding.
 
 ### **zigzag32** ()
 Arguments: None

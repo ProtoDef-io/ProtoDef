@@ -62,6 +62,18 @@
   "varint": {
     "enum": ["varint"]
   },
+  "varint64": {
+    "enum": ["varint64"]
+  },
+  "varint128": {
+    "enum": ["varint128"]
+  },
+  "zigzag32": {
+    "enum": ["zigzag32"]
+  },
+  "zigzag64": {
+    "enum": ["zigzag64"]
+  },
   "int": {
     "title": "int",
     "type": "array",

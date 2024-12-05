@@ -70,6 +70,70 @@ Maps a byte to a string, 1 to "byte", 2 to "short", 3 to "int", 4 to "long".
 ```
 Example of value: `"int"`
 
+### **bitflags** ([ { type: string, flags: object | array, big?: boolean, shift?: number } ])
+Arguments:
+* type : The underlying integer type (eg varint, lu32).
+* flags : Either an array of flag values from LSB to MSB, or an object containing a mappng of valueName => bitMask.
+* big : 64+ bits. In langauges like javascript (where all numbers are 64-bit floating points), special data types may have to be used for integers greater than 32 bits, so this must be set to true if the `type` is using the special data type.
+* shift : If flags is an array, an extra offset to add on. Helpful if there are unused bits at the LSB.
+
+Represents boolean flags packed into an integer. Similar to bitfields, but only intended for enumerated boolean flags (each flag occupies 1 bit), and supports arbitrary underlying integer types.
+
+Example:
+
+```json
+[
+  "bitflags",
+  {
+    "type": "lu32",
+    "flags": ["onGround", "inAir"]
+  }
+]
+```
+
+or 
+```yaml
+[
+  "bitflags",
+  {
+    "type": "lu32",
+    "big": true,
+    "flags": {
+      "onGround": 0b1,
+      "inAir": 0b10
+    }
+  }
+]
+```
+
+Example of value to pass when writing: `{"flags": { "onGround": true, "inAir": false } }`. Likewise when reading you will get a similar object back, with a extra `_value` field holding the raw integer.
+
+### **mapper** ({ type: Type, mappings: { [String]: Any, ... } })
+Arguments:
+* type : the type of the input
+* mappings : a mappings object
+
+Maps string to a values.
+
+Example:
+
+Maps a byte to a string, 1 to "byte", 2 to "short", 3 to "int", 4 to "long".
+```json
+[
+  "mapper",
+  {
+    "type": "i8",
+    "mappings": {
+      "1": "byte",
+      "2": "short",
+      "3": "int",
+      "4": "long"
+    }
+  }
+]
+```
+Example of value: `"int"`
+
 ### **pstring** ({ countType: Type, ?count: Countable })
 Arguments:
 * countType : the type of the length prefix

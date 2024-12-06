@@ -419,12 +419,12 @@
     ]
   },
   {
-    "type":"bitfield",
+    "type":"bitflags",
     "subtypes":[
       {
         "description":"8bit bitset flag array",
         "type":[
-          "bitfield",
+          "bitflags",
           { "type": "u8", "flags": ["onGround"] }
         ],
         "values":[
@@ -441,7 +441,7 @@
       {
         "description":"8bit bitset flag with object",
         "type":[
-          "bitfield",
+          "bitflags",
           { "type": "u8", "flags": { "onGround": 1 } }
         ],
         "values":[

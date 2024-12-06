@@ -61,5 +61,4 @@ Similar to **varint**, except using [ZigZag encoding](https://protobuf.dev/progr
 ### **zigzag64** ()
 Arguments: None
 
-Same as **zigzag32**, but for 64-bit signed integers.
-
+Same as **zigzag32**, but for 64-bit signed integers in ZigZag encoding.

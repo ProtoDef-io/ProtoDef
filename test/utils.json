@@ -52,14 +52,94 @@
         "buffer":["0xff", "0xff", "0xff", "0xff", "0x0f"]
       },
       {
-        "description":"maximum varint",
+        "description":"maximum varint (32bit)",
         "value":2147483647,
         "buffer":["0xff", "0xff", "0xff", "0xff", "0x07"]
       },
       {
-        "description":"minimum varint",
+        "description":"minimum varint (32bit)",
         "value":-2147483648,
         "buffer":["0x80", "0x80", "0x80", "0x80", "0x08"]
+      }
+    ]
+  },
+  {
+    "type":"varint64",
+    "values":[
+      {
+        "description":"8-bit integer",
+        "value":1,
+        "buffer":["0x01"]
+      },
+      {
+        "description":"8-bit maximum integer",
+        "value":127,
+        "buffer":["0x7f"]
+      },
+      {
+        "description":"16-bit integer",
+        "value":300,
+        "buffer":["0xac", "0x02"]
+      },
+      {
+        "description":"24-bit integer",
+        "value":100000,
+        "buffer":["0xa0", "0x8d", "0x06"]
+      },
+      {
+        "description":"32-bit integer",
+        "value":16909060,
+        "buffer":["0x84", "0x86", "0x88", "0x08"]
+      }
+    ]
+  },
+  {
+    "type":"varint128",
+    "values":[
+      {
+        "description":"8-bit integer",
+        "value":1,
+        "buffer":["0x01"]
+      },
+      {
+        "description":"8-bit maximum integer",
+        "value":127,
+        "buffer":["0x7f"]
+      },
+      {
+        "description":"16-bit integer",
+        "value":300,
+        "buffer":["0xac", "0x02"]
+      },
+      {
+        "description":"24-bit integer",
+        "value":100000,
+        "buffer":["0xa0", "0x8d", "0x06"]
+      },
+      {
+        "description":"32-bit integer",
+        "value":16909060,
+        "buffer":["0x84", "0x86", "0x88", "0x08"]
+      }
+    ]
+  },
+  {
+    "type":"zigzag32",
+    "values":[
+      {
+        "description":"8-bit integer",
+        "value":1,
+        "buffer":["0x02"]
+      }
+    ]
+  },
+  {
+    "type":"zigzag64",
+    "values":[
+      {
+        "description":"8-bit integer",
+        "value":1,
+        "buffer":["0x02"]
       }
     ]
   },
@@ -333,6 +413,59 @@
               "0x65"
             ],
             "value":{ "x": 12, "y": 332, "z": 4382821 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"bitflags",
+    "subtypes":[
+      {
+        "description":"8bit bitset flag array",
+        "type":[
+          "bitflags",
+          { "type": "u8", "flags": ["onGround"] }
+        ],
+        "values":[
+          {
+            "value":{
+              "_value": 1,
+              "onGround": true
+            },
+            "buffer":["0x01"]
+          }
+        ]
+      },
+      {
+        "description":"8bit bitset flag object",
+        "type":[
+          "bitflags",
+          { "type": "u8", "flags": { "onGround": 1 } }
+        ],
+        "values":[
+          {
+            "value":{
+              "_value": 1,
+              "onGround": true
+            },
+            "buffer":["0x01"]
+          }
+        ]
+      },
+      {
+        "description":"8bit bitset flag big object",
+        "type":[
+          "bitflags",
+          { "type": "u8", "big": true, "flags": { "onGround": 1 } }
+        ],
+        "values":[
+          {
+            "value":{
+              "_value": 1,
+              "onGround": true
+            },
+            "buffer":["0x01"]
           }
         ]
       }

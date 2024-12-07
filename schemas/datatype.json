@@ -27,6 +27,10 @@
     { "$ref": "lu64" },
     { "$ref": "int" },
     { "$ref": "varint" },
+    { "$ref": "varint64" },
+    { "$ref": "varint128" },
+    { "$ref": "zigzag32" },
+    { "$ref": "zigzag64" },
     { "$ref": "lint" },
 
     { "$ref": "array" },
@@ -40,6 +44,7 @@
     { "$ref": "pstring" },
     { "$ref": "buffer" },
     { "$ref": "bitfield" },
+    { "$ref": "bitflags" },
     { "$ref": "mapper" }
   ]
 }

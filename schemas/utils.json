@@ -102,6 +102,20 @@
     ],
     "additionalItems": false
   },
+  "bitflags": {
+    "title": "bitflags",
+    "type": "array",
+    "items": [
+      {
+        "enum": ["bitflags"]
+      },
+      {
+        "type": "object",
+        "additionalItems": false
+      }
+    ],
+    "additionalItems": false
+  },
   "mapper": {
     "title": "mapper",
     "type": "array",

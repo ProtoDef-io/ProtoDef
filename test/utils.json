@@ -429,29 +429,43 @@
         ],
         "values":[
           {
-            "buffer":[
-              "0x1"
-            ],
             "value":{
+              "_value": 1,
               "onGround": true
-            }
+            },
+            "buffer":["0x01"]
           }
         ]
       },
       {
-        "description":"8bit bitset flag with object",
+        "description":"8bit bitset flag object",
         "type":[
           "bitflags",
           { "type": "u8", "flags": { "onGround": 1 } }
         ],
         "values":[
           {
-            "buffer":[
-              "0x1"
-            ],
             "value":{
+              "_value": 1,
               "onGround": true
-            }
+            },
+            "buffer":["0x01"]
+          }
+        ]
+      },
+      {
+        "description":"8bit bitset flag big object",
+        "type":[
+          "bitflags",
+          { "type": "u8", "big": true, "flags": { "onGround": 1 } }
+        ],
+        "values":[
+          {
+            "value":{
+              "_value": 1,
+              "onGround": true
+            },
+            "buffer":["0x01"]
           }
         ]
       }

@@ -1,0 +1,103 @@
+[
+  {
+    "type": "loop",
+    "subtypes": [
+      {
+        "description": "loop without terminator",
+        "type": [
+          "loop",
+          {
+            "type": "i8",
+            "nt": null
+          }
+        ],
+        "values": [
+          {
+            "description": "empty loop without terminator",
+            "buffer": [],
+            "value": []
+          },
+          {
+            "description": "single element loop without terminator",
+            "buffer": ["0x05"],
+            "value": [5]
+          },
+          {
+            "description": "multiple elements loop without terminator",
+            "buffer": ["0x01", "0x02", "0x03"],
+            "value": [1, 2, 3]
+          }
+        ]
+      },
+      {
+        "description": "loop with terminator",
+        "type": [
+          "loop", 
+          {
+            "type": "i8",
+            "nt": 0
+          }
+        ],
+        "values": [
+          {
+            "description": "empty loop with terminator",
+            "buffer": ["0x00"],
+            "value": []
+          },
+          {
+            "description": "single element loop with terminator",
+            "buffer": ["0x05", "0x00"],
+            "value": [5]
+          },
+          {
+            "description": "multiple elements loop with terminator",
+            "buffer": ["0x01", "0x02", "0x03", "0x00"],
+            "value": [1, 2, 3]
+          }
+        ]
+      },
+      {
+        "description": "loop of 16-bit integers",
+        "type": [
+          "loop",
+          {
+            "type": "i16",
+            "nt": null
+          }
+        ],
+        "values": [
+          {
+            "description": "loop of 16-bit integers without terminator",
+            "buffer": ["0x00", "0x01", "0x00", "0x02"],
+            "value": [1, 2]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "restBuffer",
+    "values": [
+      {
+        "description": "empty rest buffer",
+        "buffer": [],
+        "value": []
+      },
+      {
+        "description": "single byte rest buffer",
+        "buffer": ["0xFF"],
+        "value": ["0xFF"]
+      },
+      {
+        "description": "multiple bytes rest buffer",
+        "buffer": ["0x48", "0x65", "0x6C", "0x6C", "0x6F"],
+        "value": ["0x48", "0x65", "0x6C", "0x6C", "0x6F"]
+      },
+      {
+        "description": "binary data rest buffer",
+        "buffer": ["0x00", "0x01", "0x02", "0x03", "0x04", "0x05"],
+        "value": ["0x00", "0x01", "0x02", "0x03", "0x04", "0x05"]
+      }
+    ]
+  }
+]

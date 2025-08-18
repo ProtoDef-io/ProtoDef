@@ -1,0 +1,42 @@
+{
+  "loop": {
+    "title": "loop",
+    "type": "array",
+    "items": [
+      {
+        "enum": ["loop"]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "type": {
+            "$ref": "dataType"
+          },
+          "nt": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": ["type", "nt"]
+      }
+    ],
+    "additionalItems": false
+  },
+  "restBuffer": {
+    "title": "restBuffer",
+    "type": "array",
+    "items": [
+      {
+        "enum": ["restBuffer"]
+      }
+    ],
+    "additionalItems": false
+  }
+}

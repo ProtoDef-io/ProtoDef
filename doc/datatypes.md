@@ -18,3 +18,6 @@
 * * [bitfield](./datatypes/utils.md)
 * * [mapper](./datatypes/utils.md)
 * * [pstring](./datatypes/utils.md)
+* [Extras](./datatypes/extras.md)
+* * [loop](./datatypes/extras.md#loop)
+* * [restBuffer](./datatypes/extras.md#restbuffer)

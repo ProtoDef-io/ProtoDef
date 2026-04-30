@@ -111,6 +111,32 @@
       },
       {
         "type": "object",
+        "properties": {
+          "type": "string",
+          "flags": {
+            "oneOf": [
+              {
+                "type": "object"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "big": {
+            "type": "boolean"
+          },
+          "shift": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "type",
+          "flags"
+        ],
         "additionalItems": false
       }
     ],

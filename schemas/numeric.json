@@ -1,77 +1,102 @@
 {
   "i8": {
+    "title": "i8",
     "enum": ["i8"]
   },
   "u8": {
+    "title": "u8",
     "enum": ["u8"]
   },
   "i16": {
+    "title": "i16",
     "enum": ["i16"]
   },
   "u16": {
+    "title": "u16",
     "enum": ["u16"]
   },
   "i32": {
+    "title": "i32",
     "enum": ["i32"]
   },
   "u32": {
+    "title": "u32",
     "enum": ["u32"]
   },
   "f32": {
+    "title": "f32",
     "enum": ["f32"]
   },
   "f64": {
+    "title": "f64",
     "enum": ["f64"]
   },
   "li8": {
+    "title": "li8",
     "enum": ["li8"]
   },
   "lu8": {
+    "title": "lu8",
     "enum": ["lu8"]
   },
   "li16": {
+    "title": "li16",
     "enum": ["li16"]
   },
   "lu16": {
+    "title": "lu16",
     "enum": ["lu16"]
   },
   "li32": {
+    "title": "li32",
     "enum": ["li32"]
   },
   "lu32": {
+    "title": "lu32",
     "enum": ["lu32"]
   },
   "lf32": {
+    "title": "lf32",
     "enum": ["lf32"]
   },
   "lf64": {
+    "title": "lf64",
     "enum": ["lf64"]
   },
   "i64": {
+    "title": "i64",
     "enum": ["i64"]
   },
   "li64": {
+    "title": "li64",
     "enum": ["li64"]
   },
   "u64": {
+    "title": "u64",
     "enum": ["u64"]
   },
   "lu64": {
+    "title": "lu64",
     "enum": ["lu64"]
   },
   "varint": {
+    "title": "varint",
     "enum": ["varint"]
   },
   "varint64": {
+    "title": "varint64",
     "enum": ["varint64"]
   },
   "varint128": {
+    "title": "varint128",
     "enum": ["varint128"]
   },
   "zigzag32": {
+    "title": "zigzag32",
     "enum": ["zigzag32"]
   },
   "zigzag64": {
+    "title": "zigzag64",
     "enum": ["zigzag64"]
   },
   "int": {

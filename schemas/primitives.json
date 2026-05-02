@@ -1,5 +1,6 @@
 {
   "bool": {
+    "title": "bool",
     "enum": ["bool"]
   },
   "cstring": {
@@ -23,6 +24,7 @@
     "additionalItems": false
   },
   "void": {
+    "title": "void",
     "enum": ["void"]
   }
 }

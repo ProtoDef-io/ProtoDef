@@ -1,78 +1,753 @@
 {
   "i8": {
-    "enum": ["i8"]
+    "title": "i8",
+    "oneOf": [
+      {
+        "enum": ["i8"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["i8"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "u8": {
-    "enum": ["u8"]
+    "title": "u8",
+    "oneOf": [
+      {
+        "enum": ["u8"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["u8"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "i16": {
-    "enum": ["i16"]
+    "title": "i16",
+    "oneOf": [
+      {
+        "enum": ["i16"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["i16"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "u16": {
-    "enum": ["u16"]
+    "title": "u16",
+    "oneOf": [
+      {
+        "enum": ["u16"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["u16"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "i32": {
-    "enum": ["i32"]
+    "title": "i32",
+    "oneOf": [
+      {
+        "enum": ["i32"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["i32"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "u32": {
-    "enum": ["u32"]
+    "title": "u32",
+    "oneOf": [
+      {
+        "enum": ["u32"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["u32"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "f32": {
-    "enum": ["f32"]
+    "title": "f32",
+    "oneOf": [
+      {
+        "enum": ["f32"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["f32"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "f64": {
-    "enum": ["f64"]
+    "title": "f64",
+    "oneOf": [
+      {
+        "enum": ["f64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["f64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "li8": {
-    "enum": ["li8"]
+    "title": "li8",
+    "oneOf": [
+      {
+        "enum": ["li8"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["li8"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "lu8": {
-    "enum": ["lu8"]
+    "title": "lu8",
+    "oneOf": [
+      {
+        "enum": ["lu8"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["lu8"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "li16": {
-    "enum": ["li16"]
+    "title": "li16",
+    "oneOf": [
+      {
+        "enum": ["li16"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["li16"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "lu16": {
-    "enum": ["lu16"]
+    "title": "lu16",
+    "oneOf": [
+      {
+        "enum": ["lu16"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["lu16"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "li32": {
-    "enum": ["li32"]
+    "title": "li32",
+    "oneOf": [
+      {
+        "enum": ["li32"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["li32"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "lu32": {
-    "enum": ["lu32"]
+    "title": "lu32",
+    "oneOf": [
+      {
+        "enum": ["lu32"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["lu32"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "lf32": {
-    "enum": ["lf32"]
+    "title": "lf32",
+    "oneOf": [
+      {
+        "enum": ["lf32"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["lf32"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "lf64": {
-    "enum": ["lf64"]
+    "title": "lf64",
+    "oneOf": [
+      {
+        "enum": ["lf64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["lf64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "i64": {
-    "enum": ["i64"]
+    "title": "i64",
+    "oneOf": [
+      {
+        "enum": ["i64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["i64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "li64": {
-    "enum": ["li64"]
+    "title": "li64",
+    "oneOf": [
+      {
+        "enum": ["li64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["li64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "u64": {
-    "enum": ["u64"]
+    "title": "u64",
+    "oneOf": [
+      {
+        "enum": ["u64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["u64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "lu64": {
-    "enum": ["lu64"]
+    "title": "lu64",
+    "oneOf": [
+      {
+        "enum": ["lu64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["lu64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "varint": {
-    "enum": ["varint"]
+    "title": "varint",
+    "oneOf": [
+      {
+        "enum": ["varint"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["varint"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "varint64": {
-    "enum": ["varint64"]
+    "title": "varint64",
+    "oneOf": [
+      {
+        "enum": ["varint64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["varint64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "varint128": {
-    "enum": ["varint128"]
+    "title": "varint128",
+    "oneOf": [
+      {
+        "enum": ["varint128"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["varint128"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "zigzag32": {
-    "enum": ["zigzag32"]
+    "title": "zigzag32",
+    "oneOf": [
+      {
+        "enum": ["zigzag32"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["zigzag32"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "zigzag64": {
-    "enum": ["zigzag64"]
+    "title": "zigzag64",
+    "oneOf": [
+      {
+        "enum": ["zigzag64"]
+      },
+      {
+        "type": "array",
+        "items": [
+          {
+            "enum": ["zigzag64"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        ],
+        "additionalItems": false
+      }
+    ]
   },
   "int": {
     "title": "int",
@@ -82,18 +757,20 @@
         "enum": ["int"]
       },
       {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "size": {
-              "type": "number"
-            }
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "number"
           },
-          "required": ["size"],
-          "additionalProperties": false
+          "minimum": {
+            "type": "number"
+          },
+          "maximum": {
+            "type": "number"
+          }
         },
-        "additionalItems": false
+        "required": ["size"],
+        "additionalProperties": false
       }
     ],
     "additionalItems": false
@@ -106,18 +783,20 @@
         "enum": ["lint"]
       },
       {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "size": {
-              "type": "number"
-            }
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "number"
           },
-          "required": ["size"],
-          "additionalProperties": false
+          "minimum": {
+            "type": "number"
+          },
+          "maximum": {
+            "type": "number"
+          }
         },
-        "additionalItems": false
+        "required": ["size"],
+        "additionalProperties": false
       }
     ],
     "additionalItems": false

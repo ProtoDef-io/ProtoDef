@@ -45,6 +45,7 @@
     { "$ref": "buffer" },
     { "$ref": "bitfield" },
     { "$ref": "bitflags" },
-    { "$ref": "mapper" }
+    { "$ref": "mapper" },
+    { "$ref": "hash" }
   ]
 }

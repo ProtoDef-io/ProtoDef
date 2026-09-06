@@ -144,5 +144,31 @@
       }
     ],
     "additionalItems": false
+  },
+  "hash": {
+    "title": "hash",
+    "type": "array",
+    "items": [
+      {
+        "enum": ["hash"]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "alg": {
+            "type": "string"
+          },
+          "type": {
+            "$ref": "dataType"
+          },
+          "body": {
+            "$ref": "dataType"
+          }
+        },
+        "required": ["alg", "type", "body"],
+        "additionalProperties": false
+      }
+    ],
+    "additionalItems": false
   }
 }

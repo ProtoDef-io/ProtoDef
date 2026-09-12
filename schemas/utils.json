@@ -162,7 +162,7 @@
             "$ref": "dataType"
           },
           "body": {
-            "$ref": "dataType"
+            "type": "string"
           }
         },
         "required": ["alg", "type", "body"],

@@ -144,5 +144,31 @@
       }
     ],
     "additionalItems": false
+  },
+  "hash": {
+    "title": "hash",
+    "type": "array",
+    "items": [
+      {
+        "enum": ["hash"]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "alg": {
+            "enum": ["crc32c"]
+          },
+          "type": {
+            "$ref": "dataType"
+          },
+          "body": {
+            "type": "string"
+          }
+        },
+        "required": ["alg", "type", "body"],
+        "additionalProperties": false
+      }
+    ],
+    "additionalItems": false
   }
 }

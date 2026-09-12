@@ -124,3 +124,25 @@ Example: A string length prefixed by a varint.
 ]
 ```
 Example of value: `"my string"`
+
+### **hash** ({ alg: String, type: Type, body: Type })
+Arguments:
+* alg : the hash algorithm, one of : `crc32c` (CRC-32C, the Castagnoli polynomial, reflected, all-ones init and final xor, a 4 byte digest)
+* type : the type the hash is written and read as, of constant size and at least as wide as the digest
+* body : the name of the type the value is serialized as before being hashed
+
+Represents a hash of a value instead of the value itself : writing serializes the value as `body`, hashes those bytes and writes the digest as `type`; reading reads `type` and yields the digest. When `type` is signed the digest is written in two's complement.
+
+Example: A CRC32C of an item component, written as a signed int.
+```json
+[
+  "hash",
+  {
+    "alg": "crc32c",
+    "type": "i32",
+    "body": "ItemComponent"
+  }
+]
+```
+
+Example of value: `{ "id": 5, "level": 3 }`, serializing to `05 03` / reads as `-1088848499`

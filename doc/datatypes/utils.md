@@ -127,23 +127,13 @@ Example of value: `"my string"`
 
 ### **hash** ({ alg: String, type: Type, body: Type })
 Arguments:
-* alg : the hash algorithm, currently only `crc32c`
-* type : the type the hash is written and read as
+* alg : the hash algorithm, one of : `crc32c` (CRC-32C, the Castagnoli polynomial, reflected, all-ones init and final xor, a 4 byte digest)
+* type : the type the hash is written and read as, of constant size and at least as wide as the digest
 * body : the type the value is serialized as before being hashed
 
-Represents a hash of a value instead of the value itself: writing serializes the value as `body`, hashes the bytes and writes the hash as `type`; reading reads `type` and yields the hash. The value is not recoverable from the buffer, so the read side sees only the hash.
+Represents a hash of a value instead of the value itself : writing serializes the value as `body`, hashes those bytes and writes the digest as `type`; reading reads `type` and yields the digest. When `type` is signed the digest is written in two's complement.
 
-`alg` is an explicit list rather than whatever hashes the implementation's platform happens to offer, so that a protocol using `hash` means the same thing in every implementation:
-
-| alg | digest |
-| --- | --- |
-| `crc32c` | a 4 byte unsigned integer (CRC-32C, the Castagnoli polynomial, reflected, all-ones init and final xor) |
-
-Because the digest's width is fixed by `alg`, the size of a `hash` field is known without hashing anything. `type` must therefore be a type of constant size, at least as wide as the digest; a variable-length `type` such as `varint` is an error.
-
-A CRC is unsigned. When `type` is signed (for example `i32`) the hash is written in two's complement, so it reads back the way a language with only signed integers would produce it.
-
-Example: a CRC32C of an item component, written as a signed int like Minecraft's `HashedSlot` carries it.
+Example: A CRC32C of an item component, written as a signed int.
 ```json
 [
   "hash",
@@ -155,4 +145,4 @@ Example: a CRC32C of an item component, written as a signed int like Minecraft's
 ]
 ```
 
-Example of value: `{ "id": 5, "level": 3 }` (whatever `body` accepts) / reads as `-486237565`
+Example of value: `{ "id": 5, "level": 3 }`, serializing to `05 03` / reads as `-1088848499`

@@ -127,13 +127,21 @@ Example of value: `"my string"`
 
 ### **hash** ({ alg: String, type: Type, body: Type })
 Arguments:
-* alg : the hash algorithm: `crc32`, `crc32c`, or any digest the platform's crypto library provides (`md5`, `sha1`, `sha256`, ...)
+* alg : the hash algorithm, currently only `crc32c`
 * type : the type the hash is written and read as
 * body : the type the value is serialized as before being hashed
 
 Represents a hash of a value instead of the value itself: writing serializes the value as `body`, hashes the bytes and writes the hash as `type`; reading reads `type` and yields the hash. The value is not recoverable from the buffer, so the read side sees only the hash.
 
-CRC hashes are unsigned integers. When `type` is signed (for example `i32`) the hash is written in two's complement, so it reads back the way a language with only signed integers would produce it. Other algorithms produce raw digest bytes, so `type` must then be a `buffer` of the digest's length.
+`alg` is an explicit list rather than whatever hashes the implementation's platform happens to offer, so that a protocol using `hash` means the same thing in every implementation:
+
+| alg | digest |
+| --- | --- |
+| `crc32c` | a 4 byte unsigned integer (CRC-32C, the Castagnoli polynomial, reflected, all-ones init and final xor) |
+
+Because the digest's width is fixed by `alg`, the size of a `hash` field is known without hashing anything. `type` must therefore be a type of constant size, at least as wide as the digest; a variable-length `type` such as `varint` is an error.
+
+A CRC is unsigned. When `type` is signed (for example `i32`) the hash is written in two's complement, so it reads back the way a language with only signed integers would produce it.
 
 Example: a CRC32C of an item component, written as a signed int like Minecraft's `HashedSlot` carries it.
 ```json

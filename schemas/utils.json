@@ -156,7 +156,7 @@
         "type": "object",
         "properties": {
           "alg": {
-            "type": "string"
+            "enum": ["crc32c"]
           },
           "type": {
             "$ref": "dataType"

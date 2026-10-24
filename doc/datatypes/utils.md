@@ -128,10 +128,10 @@ Example of value: `"my string"`
 ### **hash** ({ alg: String, type: Type, body: Type })
 Arguments:
 * alg : the hash algorithm, one of : `crc32c` (CRC-32C, the Castagnoli polynomial, reflected, all-ones init and final xor, a 4 byte digest)
-* type : the type the hash is written and read as, of constant size and at least as wide as the digest
+* type : the type the hash is written and read as: one of `u32`, `i32`, `lu32`, `li32`, or a name aliasing one of them
 * body : the name of the type the value is serialized as before being hashed
 
-Represents a hash of a value instead of the value itself : writing serializes the value as `body`, hashes those bytes and writes the digest as `type`; reading reads `type` and yields the digest. When `type` is signed the digest is written in two's complement.
+Represents a hash of a value instead of the value itself : writing serializes the value as `body`, hashes those bytes and writes the digest as `type`; reading reads `type` and yields the digest. The digest is an unsigned 32 bit integer and `type` holds exactly its 32 bits: when `type` is signed the same bits are read as two's complement, so a digest of `2^31` or more reads as that digest minus `2^32`. Any other `type` is an error, so no implementation drops or reinterprets digest bits.
 
 Example: A CRC32C of an item component, written as a signed int.
 ```json

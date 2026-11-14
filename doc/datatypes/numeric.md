@@ -36,7 +36,7 @@ Example:
 ```
 Example of value: `65535` (size = 2) / `16777215` (size = 3)
 
-### **varint** ( )
+### **varint** ()
 Arguments: None
 
 [Protobuf](https://developers.google.com/protocol-buffers/docs/encoding#varints)-compatible representation for variable-length integers using one or more bytes. Intended for 32-bit unsigned integers, or signed 32-bit integers that have been directly cast to an integer (where the MSB is the sign bit) before encoding.

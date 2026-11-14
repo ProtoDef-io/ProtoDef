@@ -15,7 +15,6 @@ For `compareTo` variables, to go up one level when referencing a field, use "../
 Switch statement field names starting with "/" will reference a root variable. Root variables are primitives that can be used for comparisons and changed dynamically.
 
 Example:
-
 A switch which can encode a byte, a varint, a float or a string depending on "someField". 
 If the value of someField is different, then the value encoded is of type void.
 ```json
@@ -43,7 +42,8 @@ Represents a simple optional type.
 It's encoded as a boolean indicating whether the value is there or not.
 It's similar to the `Optional` type in java or `Maybe` in haskell.
 
-Example: An option of value string
+Example:
+An option of value string
 ```json
 [
   "option",

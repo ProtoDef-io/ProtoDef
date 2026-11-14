@@ -8,7 +8,8 @@ Arguments:
 
 Represents a list of values with same type.
 
-Example: An array of int prefixed by a short length.
+Example:
+An array of int prefixed by a short length.
 ```json
 [
   "array",
@@ -20,7 +21,7 @@ Example: An array of int prefixed by a short length.
 ```
 Example of value: `[1, 2, 3, 4]` (type = [i8](./numeric.md)) / `["ac", "dc"]` (type = [cstring](./utils.md))
 
-### **container** ([ { name: String, type: Type, ?anon: Bool }, ... ])
+### **container** ([ { name: String, type: Type, ?anon: Boolean }, ... ])
 Arguments: 
 * [array] : a field
 * * name : the name of field
@@ -29,7 +30,8 @@ Arguments:
 
 Represents a list of named values.
 
-Example: A container with fields of type int, int, ushort and ushort.
+Example:
+A container with fields of type int, int, ushort and ushort.
 ```json
 [
   "container",
@@ -57,7 +59,8 @@ Arguments:
 
 Represents a count field for an array or a buffer. 
 
-Example: A count for a field name records, of type short.
+Example:
+A count for a field name records, of type short.
 ```json
 [
   "count",

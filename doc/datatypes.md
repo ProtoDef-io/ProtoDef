@@ -18,3 +18,4 @@
 * * [bitfield](./datatypes/utils.md)
 * * [mapper](./datatypes/utils.md)
 * * [pstring](./datatypes/utils.md)
+* * [hash](./datatypes/utils.md)
